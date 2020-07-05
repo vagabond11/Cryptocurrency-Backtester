@@ -60,10 +60,19 @@ def moving_averages(historical_data, ticker, cash):
     print( "Final portfolio value: " + str(portfolio_value) )
     net = portfolio_value - initial
     if (net > 0):
-        print( "You profited: " + str(net)  )
+        print( "You profited: "  + str(net)  )
     else:
         print("You lost:  " + str(net)   )
     plot_graph(x_values, y_values)
+    
+    
+    
+    def get_average(avg_list):
+        total = 0
+        for data_set in avg_list:
+             total += float(data_set["close"])
+        return total/len(avg_list) 
+
     
     
     
