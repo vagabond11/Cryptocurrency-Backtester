@@ -73,6 +73,16 @@ def moving_averages(historical_data, ticker, cash):
              total += float(data_set["close"])
         return total/len(avg_list) 
 
+
+
+    def plot_graph(x, y):
+    
+        plt.plot(x, y)
+        plt.xlabel("Minute")
+        plt.ylabel("Portfolio Value")
+        plt.show()
+    
+    
     
     
     
