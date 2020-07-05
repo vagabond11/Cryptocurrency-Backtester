@@ -84,6 +84,8 @@ def moving_averages(historical_data, ticker, cash):
     
     
     
+    start() 
+    
     
     
     
